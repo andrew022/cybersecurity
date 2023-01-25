@@ -1,0 +1,1 @@
+days_of_week=("friday" "saturday" "sunday")
