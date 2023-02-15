@@ -1,15 +1,15 @@
 import os
 
-dir = input("Please input file path: ")
+user_input = input("Please input a folder name: ")
 
-def walk():
+def dir_walk(dir_name):
 
-    for (root_dir_path, sub_dirs, files) in os.walk(dir):
+    for (root, dirs, files) in os.walk(dir_name):
         ### Add a print command here to print ==root==
-        print(root_dir_path)
+        print(root)
         ### Add a print command here to print ==dirs==
-        print(sub_dirs)
+        print(dirs)
         ### Add a print command here to print ==files==
         print(files)
 
-walk()
+dir_walk(user_input)
